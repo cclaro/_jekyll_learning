@@ -1,0 +1,29 @@
+footer {
+	background: url(../img/hero-bg.jpg) center center;
+	background-size: cover;
+	
+
+	.lockup {
+		padding: 50px 30px;
+		@include clearfix;
+
+		.logo {
+			@include size(50px);
+			float: left;
+			margin-right: 30px;
+		}
+
+		.content-wrap {
+			float: left;
+
+			.copyright {
+
+				text-transform: uppercase;
+				margin: 0;
+				font-size: 12px;
+				color: rgba(0,0,0,0.4);
+
+			}
+		}
+	}
+}
