@@ -11,6 +11,10 @@ footer {
 			@include size(50px);
 			float: left;
 			margin-right: 30px;
+
+			path {
+				fill: rgba(0,0,0,0.3);
+			}
 		}
 
 		.content-wrap {
@@ -23,6 +27,18 @@ footer {
 				font-size: 12px;
 				color: rgba(0,0,0,0.4);
 
+			}
+
+			a {
+				@extend .small-bold !optional;
+				color: rgba(0,0,0,0.7);
+				display: inline-block;
+				margin-right: 30px;
+				text-decoration: none;
+
+				&:hover {
+					color: rgba(0,0,0,0.1);
+				}
 			}
 		}
 	}

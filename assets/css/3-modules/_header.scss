@@ -23,7 +23,7 @@ header {
 			text-decoration: none;
 
 			color: rgba(0,0,0,0.7);
-			@extend small-bold !optional;
+			@extend .small-bold !optional;
 
 			&:hover {
 				color: rgba(0,0,0,1);
@@ -51,8 +51,7 @@ header {
 
 	.kicker {
 		text-align: center;
-		font-weight: 700;
-		text-transform: uppercase;
+		@extend .small-bold !optional;
 		letter-spacing: 0.05em;
 		color: #fff;
 		line-height: 1;
