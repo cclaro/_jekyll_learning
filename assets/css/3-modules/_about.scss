@@ -26,10 +26,10 @@ h3 {
 			fill: $accent;
 		}
 
-		&.icon-pencil { order: 1; }
-		&.icon-mouse { order: 2; }
-		&.icon-browser { order: 4; }
-		&.icon-video { order: 5; }
+		&.icon-pencil { @include order(1); }
+		&.icon-mouse { @include order(2); }
+		&.icon-browser { @include order(4); }
+		&.icon-video { @include order(5); }
 	}
 
 }
@@ -110,7 +110,7 @@ h3 {
 		}
 
 		@for $i from 1 through 10 {
-			&.skill-#{$i} span:nth-child(n+#{$i}) { 
+			&.skill-#{$i} span:nth-child(n+#{$i + 1}) { 
 				@extend.skill-color;
 			}
 		}
