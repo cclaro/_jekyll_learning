@@ -3,6 +3,9 @@ title: Artist Theme
 description: Thinker // Designer // YouTuber
 email: artist@gmail.com
 
+avatar: travatar.jpg
+blurb: <p><strong>Lorem ipsum dolor sit ame</strong>t, consectetur adipisicing elit. Voluptates aliquid <a href="#">totam</a> omnis molestias provident perferendis est iste labore quos libero tenetur debitis rerum voluptatibus eveniet, sequi, dolore perspiciatis in doloremque.</p>
+
 sass:
   sass_dir: assets/css
   style: :nested

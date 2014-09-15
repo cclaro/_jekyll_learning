@@ -144,7 +144,26 @@ table {
 td, th {
   padding: 0; }
 
-.small-bold, header nav a, header .kicker, footer .lockup .content-wrap a, h3 {
+/*  Basic Styles
+	-------------------------------- */
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Opens Sans', sans-serif;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+h3 {
+  color: #e1c184;
+  text-align: center;
+  padding: 100px 0 30px; }
+
+@media screen and (max-width: 480px) {
+  h3 {
+    padding: 50px 0 50px; } }
+.small-bold, h3, header nav a, header .kicker, footer .lockup .content-wrap a {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase; }
@@ -191,8 +210,10 @@ header {
     line-height: 1; }
 
 footer {
-  background: url(../img/hero-bg.jpg) center center;
-  background-size: cover; }
+  background: url(../img/logo.svg) no-repeat, url(../img/hero-bg.jpg) center center;
+  background-size: 50px 50px, cover;
+  background-position: 30px 50px, 50% 50%;
+  background-blend-mode: overlay, normal; }
   footer .lockup {
     padding: 50px 30px; }
     footer .lockup:after {
@@ -210,10 +231,9 @@ footer {
       float: left;
       margin-left: 80px; }
       footer .lockup .content-wrap .copyright {
-        text-transform: uppercase;
         margin: 0;
         font-size: 12px;
-        color: rgba(0, 0, 0, 0.4); }
+        color: rgba(0, 0, 0, 0.7); }
       footer .lockup .content-wrap a {
         color: rgba(0, 0, 0, 0.7);
         display: inline-block;
@@ -221,11 +241,6 @@ footer {
         text-decoration: none; }
         footer .lockup .content-wrap a:hover {
           color: rgba(0, 0, 0, 0.1); }
-
-h3 {
-  color: #e1c184;
-  text-align: center;
-  padding: 100px 0 30px; }
 
 .face-lockup {
   max-width: 780px;
@@ -258,7 +273,7 @@ h3 {
   .face-lockup .face-img {
     height: 200px;
     width: 200px;
-    background: url(/assets/img/face.jpg);
+    border-radius: 50%;
     order: 3; }
   .face-lockup [class^="icon-"] {
     height: 100px;
@@ -323,6 +338,9 @@ h3 {
   text-align: center;
   font-size: 24px;
   font-weight: 300; }
+  .blurb strong, .blurb a {
+    color: #c99065;
+    text-decoration: none; }
 
 .skill-lockup {
   max-width: 700px;
