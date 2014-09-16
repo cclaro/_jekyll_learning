@@ -1,7 +1,7 @@
 header {
 	height: 450px;
-	background: url(../img/hero-bg.jpg) center center;
-	background-size: cover;
+	@extend .bg-img;
+	background-position: 30px 20px, 50% 50%;
 
 	.logo {
 		@include size(50px);

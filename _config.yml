@@ -3,8 +3,18 @@ title: Artist Theme
 description: Thinker // Designer // YouTuber
 email: artist@gmail.com
 
+
+# Change the site default images content here!
+bg-img: hero-bg.jpg
+logo: logo.svg
 avatar: travatar.jpg
+
 blurb: <p><strong>Lorem ipsum dolor sit ame</strong>t, consectetur adipisicing elit. Voluptates aliquid <a href="#">totam</a> omnis molestias provident perferendis est iste labore quos libero tenetur debitis rerum voluptatibus eveniet, sequi, dolore perspiciatis in doloremque.</p>
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
 
 sass:
   sass_dir: assets/css

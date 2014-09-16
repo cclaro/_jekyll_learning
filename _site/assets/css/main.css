@@ -144,6 +144,23 @@ table {
 td, th {
   padding: 0; }
 
+/*  Selection colors (easy to forget)
+	-------------------------------- */
+::selection {
+  background: #ffff9e; }
+
+::-moz-selection {
+  background: #ffff9e; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #ffff9e; }
+
 /*  Basic Styles
 	-------------------------------- */
 body {
@@ -163,15 +180,30 @@ h3 {
 @media screen and (max-width: 480px) {
   h3 {
     padding: 50px 0 50px; } }
+/*  Links
+	-------------------------------- */
+a {
+  color: #c99065;
+  text-decoration: none;
+  outline: 0; }
+
+a:hover, a:focus {
+  color: #e3c6b1; }
+
 .small-bold, h3, header nav a, header .kicker, footer .lockup .content-wrap a {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase; }
 
+.bg-img, header, footer {
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50px 50px, cover;
+  background-position: 30px 50px, 50% 50%;
+  background-blend-mode: overlay, normal; }
+
 header {
   height: 450px;
-  background: url(../img/hero-bg.jpg) center center;
-  background-size: cover; }
+  background-position: 30px 20px, 50% 50%; }
   header .logo {
     height: 50px;
     width: 50px;
@@ -209,38 +241,33 @@ header {
     color: #fff;
     line-height: 1; }
 
-footer {
-  background: url(../img/logo.svg) no-repeat, url(../img/hero-bg.jpg) center center;
-  background-size: 50px 50px, cover;
-  background-position: 30px 50px, 50% 50%;
-  background-blend-mode: overlay, normal; }
-  footer .lockup {
-    padding: 50px 30px; }
-    footer .lockup:after {
-      content: "";
-      display: table;
-      clear: both; }
-    footer .lockup .logo {
-      height: 50px;
-      width: 50px;
-      float: left;
-      margin-right: 30px; }
-      footer .lockup .logo path {
-        fill: rgba(0, 0, 0, 0.3); }
-    footer .lockup .content-wrap {
-      float: left;
-      margin-left: 80px; }
-      footer .lockup .content-wrap .copyright {
-        margin: 0;
-        font-size: 12px;
-        color: rgba(0, 0, 0, 0.7); }
-      footer .lockup .content-wrap a {
-        color: rgba(0, 0, 0, 0.7);
-        display: inline-block;
-        margin-right: 30px;
-        text-decoration: none; }
-        footer .lockup .content-wrap a:hover {
-          color: rgba(0, 0, 0, 0.1); }
+footer .lockup {
+  padding: 50px 30px; }
+  footer .lockup:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer .lockup .logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 30px; }
+    footer .lockup .logo path {
+      fill: rgba(0, 0, 0, 0.3); }
+  footer .lockup .content-wrap {
+    float: left;
+    margin-left: 80px; }
+    footer .lockup .content-wrap .copyright {
+      margin: 0;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.7); }
+    footer .lockup .content-wrap a {
+      color: rgba(0, 0, 0, 0.7);
+      display: inline-block;
+      margin-right: 30px;
+      text-decoration: none; }
+      footer .lockup .content-wrap a:hover {
+        color: rgba(0, 0, 0, 0.1); }
 
 .face-lockup {
   max-width: 780px;
@@ -261,15 +288,15 @@ footer {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: center; }
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
   .face-lockup .face-img {
     height: 200px;
     width: 200px;
