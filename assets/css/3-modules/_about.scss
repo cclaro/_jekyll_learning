@@ -6,6 +6,7 @@
 	@include justify-content(space-between);
 	 
 	.face-img {
+		background-image: url(../img/#{$avatar-path});
 		@include size(200px);
 		border-radius: 50%;
 		order: 3;

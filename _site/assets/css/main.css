@@ -1,3 +1,4 @@
+/* ABOUT PATH CONFIGURATIONS */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -203,7 +204,8 @@ a:hover, a:focus {
 
 header {
   height: 450px;
-  background-position: 30px 20px, 50% 50%; }
+  background-position: 30px 20px, 50% 50%;
+  background-image: url(../img/logo.svg), url(../img/hero-bg.jpg); }
   header .logo {
     height: 50px;
     width: 50px;
@@ -241,33 +243,35 @@ header {
     color: #fff;
     line-height: 1; }
 
-footer .lockup {
-  padding: 50px 30px; }
-  footer .lockup:after {
-    content: "";
-    display: table;
-    clear: both; }
-  footer .lockup .logo {
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin-right: 30px; }
-    footer .lockup .logo path {
-      fill: rgba(0, 0, 0, 0.3); }
-  footer .lockup .content-wrap {
-    float: left;
-    margin-left: 80px; }
-    footer .lockup .content-wrap .copyright {
-      margin: 0;
-      font-size: 12px;
-      color: rgba(0, 0, 0, 0.7); }
-    footer .lockup .content-wrap a {
-      color: rgba(0, 0, 0, 0.7);
-      display: inline-block;
-      margin-right: 30px;
-      text-decoration: none; }
-      footer .lockup .content-wrap a:hover {
-        color: rgba(0, 0, 0, 0.1); }
+footer {
+  background-image: url(../img/logo.svg), url(../img/hero-bg.jpg); }
+  footer .lockup {
+    padding: 50px 30px; }
+    footer .lockup:after {
+      content: "";
+      display: table;
+      clear: both; }
+    footer .lockup .logo {
+      height: 50px;
+      width: 50px;
+      float: left;
+      margin-right: 30px; }
+      footer .lockup .logo path {
+        fill: rgba(0, 0, 0, 0.3); }
+    footer .lockup .content-wrap {
+      float: left;
+      margin-left: 80px; }
+      footer .lockup .content-wrap .copyright {
+        margin: 0;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.7); }
+      footer .lockup .content-wrap a {
+        color: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        margin-right: 30px;
+        text-decoration: none; }
+        footer .lockup .content-wrap a:hover {
+          color: rgba(0, 0, 0, 0.1); }
 
 .face-lockup {
   max-width: 780px;
@@ -298,6 +302,7 @@ footer .lockup {
   justify-content: space-between;
   -ms-flex-pack: justify; }
   .face-lockup .face-img {
+    background-image: url(../img/travatar.jpg);
     height: 200px;
     width: 200px;
     border-radius: 50%;

@@ -2,6 +2,7 @@ header {
 	height: 450px;
 	@extend .bg-img;
 	background-position: 30px 20px, 50% 50%;
+	background-image: url(../img/#{$logo-path}), url(../img/#{$hero-path});
 
 	.logo {
 		@include size(50px);

@@ -1,5 +1,5 @@
 footer {
-	
+	background-image: url(../img/#{$logo-path}), url(../img/#{$hero-path});
 	@extend .bg-img !optional;
 	
 	.lockup {
